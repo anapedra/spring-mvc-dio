@@ -12,6 +12,7 @@ public class JediControllerTest {
         final var expectedName = "Ana Lúcia";
         final var expectEmail = "anapedra.mil@gmail.com";
         final var expectedCpf = "01589021576";
+        final var expectedEge = 43;
 
 
 
@@ -22,6 +23,7 @@ public class JediControllerTest {
         Assertions.assertNotNull(actualJedi.getId());
         Assertions.assertEquals(expectedName,actualJedi.getName());
         Assertions.assertEquals(expectedCpf,actualJedi.getCpf());
+        Assertions.assertEquals(expectedEge,actualJedi.getEge());
         Assertions.assertNotNull(actualJedi.getCreatedAt());
         Assertions.assertNotNull(actualJedi.getUpdatedAt());
         Assertions.assertNull(actualJedi.getDaletdAt());
